@@ -1,3 +1,13 @@
+h0 ifconfig h0-eth0 192.168.0.1 netmask 255.255.255.128
+h1 ifconfig h1-eth0 192.168.0.2 netmask 255.255.255.128
+h2 ifconfig h2-eth0 192.168.0.129 netmask 255.255.255.128
+h3 ifconfig h3-eth0 192.168.0.130 netmask 255.255.255.128
+h4 ifconfig h4-eth0 192.168.1.1 netmask 255.255.255.128
+h5 ifconfig h5-eth0 192.168.1.2 netmask 255.255.255.128
+h0 ifconfig h0-eth1 192.168.1.129 netmask 255.255.255.128
+h2 ifconfig h2-eth1 192.168.1.130 netmask 255.255.255.128
+h4 ifconfig h4-eth1 192.168.1.131 netmask 255.255.255.128
+
 h0 ping h1 -c1
 h0 ping h2 -c1
 h0 ping h3 -c1
@@ -17,16 +27,6 @@ h3 ping h4 -c1
 h3 ping h5 -c1
 
 h4 ping h5 -c1
-
-h0 ifconfig h0-eth0 192.168.0.1 netmask 255.255.255.128
-h1 ifconfig h1-eth0 192.168.0.2 netmask 255.255.255.128
-h2 ifconfig h2-eth0 192.168.0.129 netmask 255.255.255.128
-h3 ifconfig h3-eth0 192.168.0.130 netmask 255.255.255.128
-h4 ifconfig h4-eth0 192.168.1.1 netmask 255.255.255.128
-h5 ifconfig h5-eth0 192.168.1.2 netmask 255.255.255.128
-h0 ifconfig h0-eth1 192.168.1.129 netmask 255.255.255.128
-h2 ifconfig h2-eth1 192.168.1.130 netmask 255.255.255.128
-h4 ifconfig h4-eth1 192.168.1.131 netmask 255.255.255.128
 
 h1 route add default gw 192.168.0.1
 h3 route add default gw 192.168.0.129
